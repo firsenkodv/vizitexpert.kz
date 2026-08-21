@@ -539,8 +539,9 @@ $maxWidth: 1440;
         padding-top: 8px;
 
         img {
+            // 240 x 36 — пропорция логотипа 268 x 40, иначе он тянется по высоте
             width: 240px !important;
-            height: 45px !important;
+            height: 36px !important;
             position: relative;
             left: -25px;
         }
@@ -924,8 +925,10 @@ $maxWidth: 1440;
                 height: 42px !important;
 
                 img {
-                    border-radius: 25px;
-                    background: #e52423;
+                    // width: auto — иначе остаётся атрибут width=260 при высоте
+                    // 42px и логотип сплющивается. Фон убран: он со своим.
+                    background: none;
+                    width: auto !important;
                     height: 42px !important;
 
                 }
@@ -1835,10 +1838,12 @@ $maxWidth: 1440;
 
                 img {
 
-                    border-radius: 25px;
                     padding: 5px 0;
-                    width: 200px;
-                    height: 38px;
+                    // 206 x 38 — пропорция логотипа 260 x 48. Обе величины
+                    // через !important: иначе высоту перебьёт 42px из блока
+                    // (max-width: 793px) выше и логотип сплющится.
+                    width: 206px !important;
+                    height: 38px !important;
                 }
             }
         }

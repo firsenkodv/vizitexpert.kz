@@ -5,8 +5,8 @@
                 <div class="fl_1 f_logo">
                     <x-logo.logo-footer
                         class="footer_logo"
-                        width="260"
-                        height="59"
+                        width="268"
+                        height="40"
                         alt="Footer Logo Hottour"
                     />
                     <div class="f_contact">

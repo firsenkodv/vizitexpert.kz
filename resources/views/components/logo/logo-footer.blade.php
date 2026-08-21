@@ -1,6 +1,6 @@
 @props([
-    'width' => 234,
-    'height' => 42,
+    'width' => 268,
+    'height' => 40,
     'alt' => 'logo',
 
 ])
@@ -10,10 +10,10 @@
 ]) }}>
     @if( active_link('home') )
 
-        <img alt="{{ $alt }}" width="{{$width}}" height="{{$height}}" src="{{ asset('images/inline/components-logo-logo-footer-1.svg') }}">
+        <img alt="{{ $alt }}" width="{{$width}}" height="{{$height}}" src="{{ asset('images/logo-footer.svg') }}">
     @else
         <a href="/" style="text-decoration: none">
-            <img alt="{{ $alt }}" width="{{$width}}" height="{{$height}}" src="{{ asset('images/inline/components-logo-logo-footer-1.svg') }}">
+            <img alt="{{ $alt }}" width="{{$width}}" height="{{$height}}" src="{{ asset('images/logo-footer.svg') }}">
         </a>
     @endif
 
