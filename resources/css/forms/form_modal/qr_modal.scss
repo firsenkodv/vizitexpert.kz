@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #29ABE2;
 
-$maxWidth: 1440;
+@import '../../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -34,7 +29,6 @@ $maxWidth: 1440;
         width: 35%;
     }
 
-
     .qr_company {
         // .qr_company__left
         display: flex;
@@ -43,7 +37,7 @@ $maxWidth: 1440;
             width: 62px;
             height: 62px;
             border-radius: 8px;
-            background: $colorRed;
+            background: $colorOrange;
             margin: 8px 10px 0 0;
 
         }
@@ -92,10 +86,9 @@ $maxWidth: 1440;
 }
 
 .qr_bottom {
-    background:$colorRed ;
+    background:$colorOrange ;
     padding: 0 24px 24px 24px;
     border-radius: 12px;
-
 
     .qr_img {
         display: flex;
@@ -107,7 +100,6 @@ $maxWidth: 1440;
             border-radius: 12px;
 
         }
-
 
     }
 

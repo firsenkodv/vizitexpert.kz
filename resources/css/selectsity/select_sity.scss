@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -56,7 +51,6 @@ $maxWidth: 1440;
     max-width: 180px;
 }
 
-
 .h_s_sity {
     display: block;
     font-size: 12px;
@@ -97,19 +91,15 @@ $maxWidth: 1440;
         transition: 0.3s;
         cursor: pointer;
         &.active {
-            background: rgba(239, 83, 63, 0.16);
-            color: $colorRed;
+            background: rgba($colorOrange, 0.16);
+            color: $colorOrange;
         }
 
         &:hover {
-            background: rgba(239, 83, 63, 0.16);
-            color: $colorRed;
+            background: rgba($colorOrange, 0.16);
+            color: $colorOrange;
         }
     }
 
-
-
 }
-
-
 

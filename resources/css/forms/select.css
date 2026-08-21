@@ -79,8 +79,8 @@ position: absolute;
 .select__list .select__item.active,
 .select__list .select__item:hover {
 
-    background: rgba(239, 83, 63, 0.16);
-    color: #EF533F;
+    background: rgba(247, 147, 30, 0.16);
+    color: #F7931E;
 }
 
 .scroll-block {

@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import './_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -64,7 +59,7 @@ $maxWidth: 1440;
     }
 
     &:hover svg circle {
-        fill: #EF533F;
+        fill: $colorOrange;
     }
 
     svg circle {
@@ -106,7 +101,7 @@ $maxWidth: 1440;
             transition: color 0.2s;
 
             &:hover {
-                color: #EF533F;
+                color: $colorOrange;
             }
 
             &:before {
@@ -155,7 +150,6 @@ $maxWidth: 1440;
         }
     }
 
-
     .imp_box__sertificate {
         display: flex;
         flex-direction: row-reverse;
@@ -186,13 +180,11 @@ $maxWidth: 1440;
         background-size: cover;
     }
 
-
 }
 
 @media screen and (max-width: 1190px) {
     .v_s_c__flex {
         .v_s_c__item {
-
 
             a {
                 font-size: 15px;
@@ -229,7 +221,6 @@ $maxWidth: 1440;
 
 @media screen and (max-width: 1068px) {
 
-
     .view_subcategories_countries__mobile {
         position: absolute;
         right: 10px;
@@ -248,13 +239,12 @@ $maxWidth: 1440;
 
     }
     .view_subcategories_countries__mobile:hover {
-        background-color: $colorRed;
+        background-color: $colorOrange;
     }
 
     .v_s_c {
         position: relative;
         height: 62px;
-
 
         .v_s_c__flex {
             display: none;
@@ -292,12 +282,10 @@ $maxWidth: 1440;
                 a {
                     height: 47px !important;
 
-
                 }
             }
         }
     }
-
 
 .v_s_c__no {
     .v_s_c__flex {
@@ -366,7 +354,6 @@ $maxWidth: 1440;
             width: 100%;
             margin-bottom: 40px;
 
-
         }
     }
 
@@ -385,7 +372,6 @@ $maxWidth: 1440;
     /*размер шрифтов*/
 
     /*размер шрифтов*/
-
 
     /* Переход на мобильную версию */
     .cabinet {
@@ -438,7 +424,6 @@ $maxWidth: 1440;
             }
         }
 
-
         .imp_box__sertificate .__sertificate {
             border-radius: 12px;
             height: 287px;
@@ -473,11 +458,9 @@ $maxWidth: 1440;
             }
         }
 
-
     }
 
     /* Переход на мобильную версию */
-
 
 }
 
@@ -578,7 +561,6 @@ $maxWidth: 1440;
 
     /*размер шрифтов*/
 
-
     /*размер шрифтов*/
     /* Переход на мобильную версию */
 
@@ -606,7 +588,6 @@ $maxWidth: 1440;
         }
     }
     /* Переход на мобильную версию */
-
 
 }
 

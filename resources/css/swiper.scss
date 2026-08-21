@@ -1,3 +1,4 @@
+@import './_variables';
 .swiper_hottours__wrap {
     width: 100%;
     max-height: 473px;
@@ -47,12 +48,11 @@
     display: flex;
 }
 
-
 .swiper-next, .swiper-prev {
     position: relative;
     width: 46px;
     height: 46px;
-    border: 1px solid #EF533F;
+    border: 1px solid $colorOrange;
     border-radius: 24px;
     display: flex;
     justify-content: center;
@@ -65,19 +65,18 @@
         font-size: 35px;
         position: relative;
         top: -3px;
-        color: #EF533F;
+        color: $colorOrange;
     }
 }
 
 .swiper-next:hover, .swiper-prev:hover {
-    background: #EF533F;
+    background: $colorOrange;
 
     span {
 
         color: #ffffff;
     }
 }
-
 
 .swiper-prev.swiper-button-prev-swiper_banner,
 .swiper-next.swiper-button-next-swiper_banner {
@@ -105,7 +104,6 @@
     position: relative;
 }
 
-
 .swiper-container__hotelphoto {
 
     width: 100%;
@@ -126,7 +124,6 @@
         z-index: 10;
         border-radius: 16px 0 0 16px;
         overflow: hidden;
-
 
         .swiper-slide {
             display: flex;

@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #29ABE2;
 
-$maxWidth: 1440;
+@import '../../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -49,7 +44,7 @@ $maxWidth: 1440;
 
     .F_form__flex {
         width: 100%;
-        background-color: $colorRed;
+        background-color: $colorOrange;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -81,7 +76,6 @@ $maxWidth: 1440;
 .new__temp_middle {
     padding: 24px;
 }
-
 
 /*  */
 .F_responce {
@@ -140,7 +134,6 @@ $maxWidth: 1440;
             background: #F7F7F7;
             padding: 24px;
             height: 100%;
-
 
         }
 

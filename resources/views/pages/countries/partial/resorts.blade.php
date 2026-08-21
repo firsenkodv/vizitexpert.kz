@@ -21,7 +21,7 @@
                             width: 199px;
                             height: 199px;
                             background-size: 70%;
-                            background-color: #EF533F;
+                            background-color: #F7931E;
                             background-position: 28px 27px;
                             background-repeat: no-repeat;
                             background-image: url('{{ asset('images/inline/html-modals-gr-1.svg') }}');"

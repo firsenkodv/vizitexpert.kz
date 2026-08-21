@@ -1,3 +1,4 @@
+@import './_variables';
 #scrollTopBtn {
     display: none;           /* Изначально скрыта */
     position: fixed;         /* Фиксированное положение */
@@ -12,10 +13,6 @@
 
     font-size: 18px;           /* Размер шрифта */
     transition:0.3s; /* Эффект плавного появления */
-
-
-
-
 
     width: 58px;
     height: 58px;

@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -51,7 +46,6 @@ $maxWidth: 1440;
 
 }
 
-
 .slick-prev, .slick-prev:hover {
     /*  top: 164px !important;*/
     left: -27px !important;
@@ -63,7 +57,6 @@ $maxWidth: 1440;
     right: -27px !important;
 
 }
-
 
 .slick-prev:before {
     width: 65px;
@@ -100,7 +93,6 @@ $maxWidth: 1440;
 
 }
 
-
 .all_programs {
     position: relative;
     max-width: 200px;
@@ -118,16 +110,11 @@ $maxWidth: 1440;
         box-shadow: 5px 9px 20px 0 rgba(0, 0, 0, 0.1392156863);
         border-radius: 26px;
 
-
     }
-
 
 }
 
 /* slider teaser */
-
-
-
 
 .slick_slider__carusel {
     padding: 0 0 30px 0 ;
@@ -146,7 +133,7 @@ $maxWidth: 1440;
             text-decoration: none;
         }
         a:hover {
-            color: $colorRed;
+            color: $colorOrange;
             text-decoration: none;
         }
     }
@@ -159,16 +146,13 @@ $maxWidth: 1440;
     .slick-prev, .slick-prev:hover {
           top: 107px !important;
 
-
     }
 
     .slick-next, .slick-next:hover {
             top: 107px !important;
 
-
     }
 
 }
-
 
 /* end slider teaser */

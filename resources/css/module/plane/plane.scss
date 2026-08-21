@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -40,11 +35,8 @@ $maxWidth: 1440;
     }
 }
 
-
-
 .mod_hot_fly_list {
     padding: 30px 0 30px 60px;
-
 
     // .mod_hot_fly_option
      .mod_hot_fly_option {
@@ -112,11 +104,6 @@ $maxWidth: 1440;
         display: block;
     }
 }
-
-
-
-
-
 
 .p_plane {
     width: 100%;

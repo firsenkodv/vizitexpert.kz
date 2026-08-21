@@ -1,17 +1,12 @@
 @charset "utf-8";
 
+@import '../_variables';
 // Селекты (chosen) в модальных формах — «Подобрать тур» и т.п.
 //
 // Общие стили chosen (chosen/chosen.scss) рассчитаны на формы поиска: высота
 // 38px, радиус 8px, шрифт 13px. В модальных формах поля другие — 46px, радиус
 // 12px, шрифт 15px (forms/input.scss), поэтому здесь селекты приводятся к ним.
 // Правила ограничены .F_form .form_select, чтобы не задеть поиск.
-
-$color: #282828;
-$colorGrey: #667085;
-$borderColor: #dddddd;
-$fieldHeight: 46px;
-$fieldRadius: 12px;
 
 .F_form .form_select {
 

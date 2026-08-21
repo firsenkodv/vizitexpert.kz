@@ -1,3 +1,4 @@
+@import '../_variables';
 @for $i from 1 through 100 {
     .pad_t#{$i} {
         padding-top: #{$i}#{'px'};
@@ -26,6 +27,4 @@
     }
 
 }
-
-
 

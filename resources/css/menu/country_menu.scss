@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -24,7 +19,7 @@ $maxWidth: 1440;
         line-height: 1.3em;
         font-weight: 600;
         text-decoration: none;
-        border-left: 2px solid $colorRed;
+        border-left: 2px solid $colorOrange;
         padding-left: 8px;
         margin-bottom: 24px;
     }
@@ -79,12 +74,11 @@ $maxWidth: 1440;
     .parent__st > a:hover, .current.parent__st > a,
     ul.nav.menu > .eee__2021 > a:hover,
     ul.nav.menu > .eee__2021.current > a {
-        background: rgba(239, 83, 63, 0.16) !important;
+        background: rgba($colorOrange, 0.16) !important;
     }
 
     .parent__st.active .parent__st_after {
         transform: rotate(180deg);
-
 
     }
 
@@ -95,10 +89,9 @@ $maxWidth: 1440;
     }
 .eee__2021_a.active {
     a {
-        color: $colorRed;
+        color: $colorOrange;
     }
 }
-
 
     .nav_child_st {
         padding: 8px 0;
@@ -111,9 +104,8 @@ $maxWidth: 1440;
     }
 
     .nav_child_st li a:hover {
-        color: $colorRed;
+        color: $colorOrange;
     }
-
 
     .nav_child_st li a {
         display: block;

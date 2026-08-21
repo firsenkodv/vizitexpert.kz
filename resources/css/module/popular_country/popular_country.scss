@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -27,13 +22,11 @@ $maxWidth: 1440;
         margin: 0 auto;
         padding-bottom: 24px;
 
-
         h2, h1, h3 {
             font-family: "Philosopher", "Arial Narrow", Arial, Helvetica, sans-serif;
             font-weight: 700;
             font-size: 48px;
             line-height: 1.2em;
-
 
         }
 
@@ -45,7 +38,6 @@ $maxWidth: 1440;
 
     .pc_items {
         margin: 0 auto;
-
 
     }
 
@@ -93,7 +85,6 @@ $maxWidth: 1440;
                 color: #fff;
             }
 
-
             .pc_category_img {
                 border-radius: 16px;
             }
@@ -108,13 +99,11 @@ $maxWidth: 1440;
 
             }
 
-
             a:hover {
                 h4 {
-                    color: #ff5200;
+                    color: $colorOrange;
                 }
             }
-
 
         }
 
@@ -151,7 +140,6 @@ $maxWidth: 1440;
     .pc_c__right {
         width: 70%;
 
-
         a {
             display: flex;
             justify-content: start;
@@ -179,7 +167,6 @@ $maxWidth: 1440;
     justify-content: space-between;
 
     .pc_super_flexDirection__left {
-
 
     }
 

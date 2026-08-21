@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -163,9 +158,7 @@ $maxWidth: 1440;
             }
         }
 
-
     }
-
 
 }
 
@@ -184,12 +177,10 @@ $maxWidth: 1440;
 
 @media screen and (max-width: 999px) {
 
-
     .search_hotel_form__copy {
         display: block;
         min-height: 200px;
         position: relative;
-
 
         .search_hotel_form {
             display: block;
@@ -204,13 +195,11 @@ $maxWidth: 1440;
         .__currency  {
             font-size: 26px;
 
-
         }
     }
     .search_hotel_form__copy.active {
         padding: 24px 0;
     }
-
 
     .search_hotel_form {
         display: none;
@@ -236,7 +225,6 @@ $maxWidth: 1440;
         padding-right: 0;
         padding-bottom: 0;
     }
-
 
     .search_result__flex {
         display: block !important;
@@ -267,7 +255,6 @@ $maxWidth: 1440;
             .wrap_button {
                 display: none !important;
             }
-
 
         }
 
@@ -492,7 +479,6 @@ $maxWidth: 1440;
     }
     .s_bottomright {
         display: block !important;
-
 
     }
 

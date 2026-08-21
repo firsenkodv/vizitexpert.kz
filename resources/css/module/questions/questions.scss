@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -43,7 +38,6 @@ $maxWidth: 1440;
     }
 }
 
-
 .questions__wrapper {
     max-width: 852px;
     margin: 0 auto;
@@ -51,11 +45,9 @@ $maxWidth: 1440;
 .index_questions__flex {
     display: flex;
 
-
     .index_questions__left {
         color: #ffffff;
         width: 50%;
-
 
         .l__label_addredd {
             line-height: 1.2em;
@@ -135,7 +127,7 @@ $maxWidth: 1440;
                 a {
                     margin: 10px;
                     border-radius: 50%;
-                    background-color: #EF533F;
+                    background-color: $colorOrange;
                     border: 1px solid #fff;
                     width: 48px;
                     height: 48px;

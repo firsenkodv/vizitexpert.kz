@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -47,7 +42,6 @@ $maxWidth: 1440;
 
 }
 
-
 .hbox__middle {
     padding: 24px 0 16px 0;
 }
@@ -63,7 +57,6 @@ $maxWidth: 1440;
     font-size: 16px;
     font-weight: 600;
     color: $color;
-
 
     .v_s_c__item {
         position: relative;
@@ -103,12 +96,10 @@ $maxWidth: 1440;
         }
     }
 
-
     .v_s_c__item:first-child {
         margin: 0 20px 0 0;
 
     }
-
 
 }
 

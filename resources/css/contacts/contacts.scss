@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #29ABE2;
 
-$maxWidth: 1440;
+@import '../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -31,7 +26,6 @@ $maxWidth: 1440;
             align-items: center;
             margin: 20px 0 0 0;
 
-
             .contactTabs__tab {
                 padding: 0 1.5%;
                 display: flex;
@@ -52,8 +46,8 @@ $maxWidth: 1440;
 
             .contactTabs__tab.active,
             .contactTabs__tab:hover {
-                background:rgba(239, 83, 63, 0.08);
-                color: $colorRed;
+                background:rgba($colorOrange, 0.08);
+                color: $colorOrange;
 
             }
 
@@ -103,7 +97,6 @@ $maxWidth: 1440;
                             padding: 0 0 16px;
                         }
 
-
                     }
 
                     // .contact_area__right
@@ -147,18 +140,17 @@ $maxWidth: 1440;
     }
 }
 
-
 .JFormFieldMap_wrapper {
     position: relative;
 }
 
 .JFormFieldMap {
 
-    border-top: 5px solid $colorRed;
+    border-top: 5px solid $colorOrange;
 
     h5 {
         font-size: 22px;
-        color: $colorRed;
+        color: $colorOrange;
         padding-bottom: 9px;
         font-weight: 600;
 
@@ -193,7 +185,6 @@ $maxWidth: 1440;
 
                 .contactTabsBody__tab {
 
-
                     .contact_area {
 
                         // .contact_area__flex
@@ -204,12 +195,10 @@ $maxWidth: 1440;
                         // .contact_area__left
                         &__left {
 
-
                         }
 
                         // .contact_area__center
                         &__center {
-
 
                         }
 
@@ -226,7 +215,6 @@ $maxWidth: 1440;
                     }
 
                 }
-
 
             }
         }
@@ -255,7 +243,6 @@ $maxWidth: 1440;
 
                 .contactTabsBody__tab {
 
-
                     .contact_area {
 
                         // .contact_area__flex
@@ -266,12 +253,10 @@ $maxWidth: 1440;
                         // .contact_area__left
                         &__left {
 
-
                         }
 
                         // .contact_area__center
                         &__center {
-
 
                         }
 
@@ -289,7 +274,6 @@ $maxWidth: 1440;
                     }
 
                 }
-
 
             }
         }
@@ -340,14 +324,12 @@ $maxWidth: 1440;
                             padding: 10px 0;
                             width: 100%;
 
-
                         }
 
                         // .contact_area__center
                         &__center {
                             padding: 10px 0;
                             width: 100%;
-
 
                         }
 
@@ -365,7 +347,6 @@ $maxWidth: 1440;
                     }
 
                 }
-
 
             }
         }

@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import './_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -53,20 +48,17 @@ $maxWidth: 1440;
                color: $colorGrey;
                transition: 0.2s;
 
-
            }
 
            &.active, &:hover {
-               background: $colorRed;
-               border: 1px solid $colorRed;
-
+               background: $colorOrange;
+               border: 1px solid $colorOrange;
 
                a, span {
                    color: #fff;
 
                }
            }
-
 
        }
    }
@@ -93,7 +85,6 @@ $maxWidth: 1440;
         border: 1px solid #ddd;
         transition: 0.2s;
 
-
         a {
             color: $colorGrey;
             text-decoration: none;
@@ -112,8 +103,8 @@ $maxWidth: 1440;
         }
 
         &:hover {
-            background: $colorRed;
-            border: 1px solid $colorRed;
+            background: $colorOrange;
+            border: 1px solid $colorOrange;
             a, span {
                 color: #fff;
 
@@ -135,7 +126,6 @@ $maxWidth: 1440;
         border: 1px solid #ddd;
         transition: 0.2s;
 
-
         a {
             color: $colorGrey;
             text-decoration: none;
@@ -153,8 +143,8 @@ $maxWidth: 1440;
             }
         }
         &:hover {
-            background: $colorRed;
-            border: 1px solid $colorRed;
+            background: $colorOrange;
+            border: 1px solid $colorOrange;
             a, span {
                 color: #fff;
 
@@ -164,7 +154,6 @@ $maxWidth: 1440;
     }
 }
 
-
 @media (max-width: 1268px) {
 
     .pagi__6,
@@ -173,7 +162,6 @@ $maxWidth: 1440;
     .pagi__9,
     .pagi__10
     {
-
 
     }
     .pagination {
@@ -190,8 +178,6 @@ $maxWidth: 1440;
             display: flex !important;
         }
     }
-
-
 
 }
 

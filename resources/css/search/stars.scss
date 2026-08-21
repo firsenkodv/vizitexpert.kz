@@ -1,3 +1,4 @@
+@import '../_variables';
 .rating {
     margin: 0;
     padding: 12px 0;
@@ -53,7 +54,6 @@
     outline-offset: 0.2em;
 }
 
-
 .rating__group .rating__star:hover,
 .rating__group .rating__star:checked {
     background-image: url('../stars/css/images/stars/star_active.svg');
@@ -89,14 +89,6 @@
     z-index: 1;
     width: 125px;
 }
-
-
-
-
-
-
-
-
 
 .rating-area {
     overflow: hidden;
@@ -134,9 +126,6 @@
     color: #fcb60b;
 }
 
-
-
-
 .rating-area_survey {
     overflow: hidden;
     width: 187px;
@@ -173,18 +162,9 @@
     color: #fcb60b;
 }
 
-
-
-
-
-
-
-
-
 .rate-area > label:active {
     position: relative;
 }
-
 
 .rating-result {
     overflow: hidden;

@@ -281,7 +281,7 @@ ul.selectMenuBox li.active {
     position: relative;
     width: auto !important;
     font-size: 14px !important;
-    border: 1px solid #EF533F !important;
+    border: 1px solid #F7931E !important;
     line-height: normal !important;
     border-radius: 4px !important;
 
@@ -365,7 +365,7 @@ ul.selectMenuBox li.active {
     text-decoration: none;
     margin: 10px 0 4px 0;
     padding: 10px 0 0 0;
-    color: #EF533F;
+    color: #F7931E;
 
 }
 

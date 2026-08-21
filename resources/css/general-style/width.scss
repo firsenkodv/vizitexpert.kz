@@ -1,3 +1,4 @@
+@import '../_variables';
 @for $i from 1 through 100 {
     .w_#{$i} {
         width: #{$i}#{'%'};

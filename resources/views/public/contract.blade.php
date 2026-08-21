@@ -26,7 +26,7 @@
         }
 
         .contract-header {
-            background: #EF533F;
+            background: #F7931E;
             color: #fff;
             padding: 32px 40px;
         }
@@ -128,7 +128,7 @@
         .sign-btn {
             width: 100%;
             padding: 16px;
-            background: #EF533F;
+            background: #F7931E;
             color: #fff;
             border: none;
             border-radius: 10px;
@@ -375,7 +375,7 @@
             <div class="contract-row">
                 <span class="contract-row__label">Рамочный договор</span>
                 <span class="contract-row__value">
-                    <a href="{{ $contract->framework_url }}" target="_blank" style="color:#EF533F;">Открыть документ</a>
+                    <a href="{{ $contract->framework_url }}" target="_blank" style="color:#F7931E;">Открыть документ</a>
                 </span>
             </div>
         </div>

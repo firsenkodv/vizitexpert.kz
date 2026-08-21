@@ -1,17 +1,11 @@
 @charset "utf-8";
 
+@import '../../_variables';
 // Лендинговый шаблон страницы раздела
 // (App\Enums\Pages\ListTemplate::Landing).
 // Вёрстка: resources/views/pages/{раздел}/templates/list/landing.blade.php
 // Макет: docs/figma/about/desktop/1-4.png, ассеты: public/images/landing/about
 
-$color: #282828;
-$colorRed: #EF533F;
-$colorGrey: #667085;
-$colorGreen: #16A34A;
-$bgBeige: #F6F3EF;
-
-$maxWidth: 1440;
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -139,12 +133,12 @@ $maxWidth: 1440;
         transition: 0.3s;
 
         &--primary {
-            background: $colorRed;
+            background: $colorOrange;
             color: #fff;
 
             // глобальный a:hover перекрашивает текст — оставляем белым
             &:hover {
-                background: darken($colorRed, 8%);
+                background: darken($colorOrange, 8%);
                 color: #fff;
             }
         }
@@ -270,7 +264,7 @@ $maxWidth: 1440;
     &__video {
         max-width: 1120px;
         margin: 40px auto 56px;
-        border: 4px solid $colorRed;
+        border: 4px solid $colorOrange;
         border-radius: 24px;
         overflow: hidden;
         background: #000;
@@ -487,7 +481,7 @@ $maxWidth: 1440;
         justify-content: center;
         width: 33px;
         height: 33px;
-        border: 1px solid $colorRed;
+        border: 1px solid $colorOrange;
         border-radius: 50%;
         background: #fff;
         font-size: 15px;

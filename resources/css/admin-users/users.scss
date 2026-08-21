@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #FD5362;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #29ABE2;
 
-$maxWidth: 1440;
+@import '../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -15,7 +10,6 @@ $maxWidth: 1440;
 @mixin family {
     font-family: 'Source Sans Pro', "Arial Narrow", Arial, Helvetica, sans-serif;
 }
-
 
 .dashboardBox {
     // .dashboardBox__title
@@ -63,7 +57,7 @@ $maxWidth: 1440;
     .errorBlade {
         font-size: 12px;
         padding: 0 5px 0 12px;
-        color: #FD5362;
+        color: $colorOrange;
     }
 
     &__upload {
@@ -96,7 +90,6 @@ $maxWidth: 1440;
             align-items: center;
             position: relative;
         }
-
 
     }
     &__formDeleteImage {
@@ -185,7 +178,7 @@ $maxWidth: 1440;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        color: $colorRed;
+        color: $colorOrange;
         font-weight: 600;
         line-height: 100%;
         border: none;
@@ -194,7 +187,7 @@ $maxWidth: 1440;
         transition: 0.2s;
     }
     #addWorker:hover {
-        color: $colorBlue;
+        color: $colorBlueBright;
     }
     /* добавление */
 
@@ -331,8 +324,8 @@ $maxWidth: 1440;
         width: 21px;
         height: 21px;
         border-radius: 20px;
-        border: 1px solid $colorRed;
-        color: $colorRed;
+        border: 1px solid $colorOrange;
+        color: $colorOrange;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -340,7 +333,6 @@ $maxWidth: 1440;
         font-size: 14px;
         position: relative;
         line-height: 0;
-
 
     }
 }
@@ -362,7 +354,6 @@ $maxWidth: 1440;
         font-size: 12px;
     }
 }
-
 
 @media (max-width: 742px) {
 
@@ -432,8 +423,6 @@ $maxWidth: 1440;
             }
         }
     }
-
-
 
     .a_user__flex_direction {
         width: 100%;

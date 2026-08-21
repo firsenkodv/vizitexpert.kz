@@ -1,12 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
-$colorGreen: #00A357;
 
-$maxWidth: 1440;
+@import '../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -18,7 +12,7 @@ $maxWidth: 1440;
 }
 .button {
     height: 46px;
-    border: 1px solid $colorRed;
+    border: 1px solid $colorOrange;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,15 +21,15 @@ $maxWidth: 1440;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
-    background: $colorRed;
+    background: $colorOrange;
     width: 100%;
     border-radius: 12px;
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
     &:hover {
-        border: 1px solid $colorRed;
-        color: $colorRed;
+        border: 1px solid $colorOrange;
+        color: $colorOrange;
         background: #fff;
     }
 }
@@ -72,12 +66,10 @@ $maxWidth: 1440;
         height: 46px;
         font-size: 16px;
 
-
     }
     .button_normal {
         height: 36px;
         font-size: 15px;
-
 
     }
     .button_small {
@@ -88,5 +80,4 @@ $maxWidth: 1440;
 
     }
 }
-
 

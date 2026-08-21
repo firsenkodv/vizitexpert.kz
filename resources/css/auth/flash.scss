@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -54,7 +49,7 @@ $maxWidth: 1440;
         transition: 0.3s;
     }
     .flashMassege__close:hover {
-    background-color: $colorRed ;
+    background-color: $colorOrange ;
     }
     h1, h2, h3, h4 {
 padding-bottom: 7px;
@@ -92,5 +87,4 @@ padding-bottom: 7px;
 
     }
 }
-
 

@@ -40,7 +40,7 @@
 
                         @if($item->rating)
                             <span class="responce_item__rating">
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="#EF533F"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.8 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.3l7.1-.7L12 2z"/></svg>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="#F7931E"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.8 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.3l7.1-.7L12 2z"/></svg>
                                 {{ number_format((float) $item->rating, 1) }}
                             </span>
                         @endif
@@ -51,13 +51,13 @@
                             <div class="responce_item__meta">
                                 @if($item->trip_date)
                                     <span class="responce_item__meta-row">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#EF533F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F7931E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
                                         {{ \Illuminate\Support\Str::ucfirst($item->trip_date->translatedFormat('F Y')) }}
                                     </span>
                                 @endif
                                 @if($item->adults)
                                     <span class="responce_item__meta-row">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#EF533F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F7931E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                                         {{ $item->adults }} {{ trans_choice('{1} взрослый|[2,*] взрослых', $item->adults) }}
                                     </span>
                                 @endif

@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import '../../_variables';
 // Страница «Сертификаты» (/sertifikaty)
 // Вёрстка: resources/views/pages/certificates/templates/list/certificates.blade.php
 // Макет: docs/figma/certificate/1-6.png, ассеты: public/images/landing/certificates
@@ -7,12 +8,6 @@
 // Базовые элементы (landing__inner, landing__hero, landing__btn, landing__cta)
 // берутся из pages/landing/landing.scss — здесь только своё.
 
-$color: #282828;
-$colorRed: #EF533F;
-$colorGrey: #667085;
-$colorDark: #292F3D; // цвет плашки «Как это работает», снят с макета
-
-$maxWidth: 1440;
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -96,7 +91,7 @@ $maxWidth: 1440;
         white-space: nowrap;
 
         &:hover {
-            color: $colorRed;
+            color: $colorOrange;
         }
     }
 
@@ -225,14 +220,14 @@ $maxWidth: 1440;
         white-space: nowrap;
 
         &:hover {
-            border-color: rgba(239, 83, 63, 0.5);
+            border-color: rgba($colorOrange, 0.5);
         }
     }
 
     .cert__sum-radio:checked + .cert__sum {
-        border-color: $colorRed;
-        background: rgba(239, 83, 63, 0.08);
-        color: $colorRed;
+        border-color: $colorOrange;
+        background: rgba($colorOrange, 0.08);
+        color: $colorOrange;
     }
 
     /* ---------- произвольная сумма ---------- */
@@ -262,17 +257,17 @@ $maxWidth: 1440;
         transition: 0.3s;
 
         &:hover {
-            border-color: rgba(239, 83, 63, 0.5);
+            border-color: rgba($colorOrange, 0.5);
         }
 
         // поле заполнено — подсвечиваем так же, как выбранный номинал
         &.is-filled {
-            border-color: $colorRed;
-            background: rgba(239, 83, 63, 0.08);
+            border-color: $colorOrange;
+            background: rgba($colorOrange, 0.08);
 
             .cert__custom-input,
             .cert__custom-currency {
-                color: $colorRed;
+                color: $colorOrange;
             }
         }
     }
@@ -346,7 +341,7 @@ $maxWidth: 1440;
             right: -12px;
             width: 44px;
             height: 2px;
-            background: $colorRed;
+            background: $colorOrange;
         }
 
         &:last-child::after {

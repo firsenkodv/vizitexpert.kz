@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -118,8 +113,8 @@ nav {
             }
 
             a:hover {
-                background: rgba(239, 83, 63, 0.16);
-                color: #EF533F
+                background: rgba($colorOrange, 0.16);
+                color: $colorOrange
             }
         }
 
@@ -133,8 +128,8 @@ nav {
 
         li.active {
             a {
-                background: rgba(239, 83, 63, 0.16);
-                color: #EF533F;
+                background: rgba($colorOrange, 0.16);
+                color: $colorOrange;
 
             }
         }
@@ -186,7 +181,7 @@ nav {
 
             a:hover {
                 background: none;
-                color: $colorRed;
+                color: $colorOrange;
             }
         }
 
@@ -194,7 +189,7 @@ nav {
             a {
                 text-align: center;
                 justify-content: center;
-                color: #EF533F;
+                color: $colorOrange;
                 text-decoration: underline;
             }
         }

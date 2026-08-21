@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -46,7 +41,6 @@ $maxWidth: 1440;
             justify-content: flex-end;
             position: relative;
 
-
         }
     }
 
@@ -62,7 +56,6 @@ $maxWidth: 1440;
         align-items: flex-start;
 
         .n_vid_item {
-
 
             max-width: 260px;
             a {
@@ -96,8 +89,6 @@ $maxWidth: 1440;
                 overflow: hidden;
             }
 
-
-
             .n_vid_item__link:hover {
                 position: relative;
                 display: block;
@@ -109,15 +100,13 @@ $maxWidth: 1440;
 
                 }
                 .n_vid_item__title {
-                    color: $colorRed;
+                    color: $colorOrange;
                 }
             }
-
 
         }
 
     }
 
 }
-
 

@@ -1,14 +1,10 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
+@import '../_variables';
 .range-slider {
     height: 5px;
     position: relative;
-    background-color: $colorRed;
+    background-color: $colorOrange;
     border-radius: 2px;
     margin: 23px 0 0 0;
 }
@@ -18,7 +14,7 @@ $colorBlue: #00AFEF;
     right: 30%;
     position: absolute;
     border-radius: 5px;
-    // background-color: $colorRed;
+    // background-color: $colorOrange;
 }
 .range-input {
     position: relative;
@@ -37,7 +33,7 @@ $colorBlue: #00AFEF;
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: 3px solid $colorRed;
+    border: 3px solid $colorOrange;
     background-color: #fff;
     pointer-events: auto;
     -webkit-appearance: none;
@@ -46,7 +42,7 @@ $colorBlue: #00AFEF;
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    border: 3px solid $colorRed;
+    border: 3px solid $colorOrange;
     background-color: #fff;
     pointer-events: auto;
     -moz-appearance: none;

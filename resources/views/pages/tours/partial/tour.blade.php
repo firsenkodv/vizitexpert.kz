@@ -16,7 +16,7 @@
                             width: 280px;
                             height: 200px;
                             background-size: 70%;
-                            background-color: #EF533F;
+                            background-color: #F7931E;
                             background-position: 38px 30px;
                             border-radius: 12px;
                             background-repeat: no-repeat;

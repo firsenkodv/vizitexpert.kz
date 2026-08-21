@@ -303,7 +303,7 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                         <tr>
                             <td class="logo" style="text-align: left;">
-                                <h1 style="padding-top: 10px"><img style="background: #EF533F;border-radius: 25px;padding: 5px 20px 5px 20px; width: 234px; height: 48px; box-sizing: border-box" alt="logo" width="234" height="48" src="{{ asset('images/inline/components-logo-logo-footer-1.svg') }}"></h1>
+                                <h1 style="padding-top: 10px"><img style="background: #F7931E;border-radius: 25px;padding: 5px 20px 5px 20px; width: 234px; height: 48px; box-sizing: border-box" alt="logo" width="234" height="48" src="{{ asset('images/inline/components-logo-logo-footer-1.svg') }}"></h1>
                             </td>
                         </tr>
                     </table>

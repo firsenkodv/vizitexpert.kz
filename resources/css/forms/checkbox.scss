@@ -1,17 +1,9 @@
-$colorRed: #EF533F;
-$color: #282828;
-$colorGrey: #667085;
-$checkbox-size: 0.8rem;
-$checkedbox-size: 1.2rem;
-
-$dark:   #15171E;
-$white:  mix($dark, white, 20%);
+@import '../_variables';
 
 
 .checkbox {
     margin: 15px;
 }
-
 
 // checkbox styles start
 
@@ -82,8 +74,8 @@ $white:  mix($dark, white, 20%);
 .checkbox-flip:checked + label span {
     &:before {
         transform:(rotateY(180deg));
-        background: $colorRed;
-        border: 1px solid $colorRed;
+        background: $colorOrange;
+        border: 1px solid $colorOrange;
 
     }
 }
@@ -92,7 +84,7 @@ $white:  mix($dark, white, 20%);
     &:before {
         animation: pop .3s ease;
         z-index: 100;
-        background: $colorRed;
+        background: $colorOrange;
     }
 }
 
@@ -100,7 +92,7 @@ $white:  mix($dark, white, 20%);
     &:after {
         width: $checkedbox-size;
         height: $checkedbox-size;
-        background: $colorRed;
+        background: $colorOrange;
         animation: pull .4s linear;
     }
 }
@@ -108,7 +100,7 @@ $white:  mix($dark, white, 20%);
 .checkbox-spin:checked + label span {
     &:before {
       //  @include transform(rotateZ(180deg));
-        background: $colorRed;
+        background: $colorOrange;
     }
 }
 

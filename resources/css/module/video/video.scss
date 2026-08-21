@@ -1,11 +1,6 @@
 @charset "utf-8";
-$color: #282828;
-$colorRed: #EF533F;
-$colorCCC: #CCCCCC;
-$colorGrey: #667085;
-$colorBlue: #00AFEF;
 
-$maxWidth: 1440;
+@import '../../_variables';
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $maxWidth: $maxWidth - 320;
@@ -16,13 +11,11 @@ $maxWidth: 1440;
     font-family: 'Source Sans Pro', "Arial Narrow", Arial, Helvetica, sans-serif;
 }
 
-
 .v_vid {
     padding: 60px 0;
     width: 100%;
     min-height: 300px;
     height: 100%;
-
 
     .v_vid__block {
 
@@ -30,7 +23,6 @@ $maxWidth: 1440;
         width: 100%;
         margin: 0 auto;
         padding-bottom: 32px;
-
 
         h2, h1, .h2 {
             font-family: "Philosopher", "Arial Narrow", Arial, Helvetica, sans-serif;
@@ -41,7 +33,6 @@ $maxWidth: 1440;
             text-align: center;
         }
 
-
     }
 
     .v_vid__video {
@@ -51,8 +42,8 @@ $maxWidth: 1440;
 
         video {
             border-radius: 24px !important;
-            border: 8px solid $colorRed !important;
-            background:  $colorRed;
+            border: 8px solid $colorOrange !important;
+            background:  $colorOrange;
         }
     }
 
@@ -68,7 +59,6 @@ $maxWidth: 1440;
     min-height: 100px;
     color: #ffffff;
     margin: 0 auto;
-
 
     .v_img {
         padding:0 10px 0 10px;
