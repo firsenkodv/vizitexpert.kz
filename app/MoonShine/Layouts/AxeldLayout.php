@@ -160,11 +160,11 @@ final class AxeldLayout extends AppLayout
     }
 
     /**
-     * v2: Footer::make()->copyright(fn () => 'HOT TOUR')
+     * v2: Footer::make()->copyright(fn () => 'Vizit Expert')
      */
     protected function getFooterCopyright(): string
     {
-        return 'HOT TOUR';
+        return 'Vizit Expert';
     }
 
     /**

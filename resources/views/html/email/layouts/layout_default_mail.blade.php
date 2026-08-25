@@ -349,7 +349,7 @@
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                     <tr>
                                         <td style="text-align: left; padding-right: 10px;">
-                                            <h3 class="heading">© 1993 - {{  now()->year }} HOT TOUR - ХОТ ТУР</h3>
+                                            <h3 class="heading">© 1993 - {{  now()->year }} Vizit Expert - Визит Эксперт</h3>
                                             <p>{!!  (isset($setting['idn']))? $setting['idn'] : '' !!}, {!! (isset($setting['country']))? $setting['country'] : '' !!}, <br>{!! (isset($setting['sityAddress']))? $setting['sityAddress'] :'' !!}</p>
                                         </td>
                                     </tr>

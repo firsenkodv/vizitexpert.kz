@@ -187,7 +187,7 @@
 <div class="contract-wrap">
 
     <div class="contract-header">
-        <div class="contract-header__logo">ТОО "Hot Tour"</div>
+        <div class="contract-header__logo">ТОО "Vizit Expert"</div>
         <div class="contract-header__number">Договор № {{ $contract->contract_number }}</div>
         <div class="contract-header__date">Создан: {{ $contract->created_at->translatedFormat('d F Y') }}</div>
 

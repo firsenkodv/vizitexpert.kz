@@ -84,7 +84,7 @@
                          рисуется через ::after (см. certificates.scss) --}}
                     <div class="cert__card">
                         <img src="{{ asset($img.'/3-card.jpg') }}" width="1078" height="534" loading="lazy"
-                             alt="Подарочный сертификат HOT TOUR">
+                             alt="Подарочный сертификат Vizit Expert">
                     </div>
 
                     @if(!empty($page->person_sums))
@@ -151,7 +151,7 @@
 
                     <div class="cert__card">
                         <img src="{{ asset($img.'/3-card.jpg') }}" width="1078" height="534" loading="lazy"
-                             alt="Подарочный сертификат HOT TOUR для юридических лиц">
+                             alt="Подарочный сертификат Vizit Expert для юридических лиц">
                     </div>
 
                     @if(!empty($page->company_sums))

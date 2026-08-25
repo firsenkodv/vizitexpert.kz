@@ -7,7 +7,7 @@
                         class="footer_logo"
                         width="260"
                         height="48"
-                        alt="Footer Logo Hottour"
+                        alt="Vizit Expert"
                     />
                     <div class="f_contact">
                     <div class="f_contact__label">
@@ -91,7 +91,7 @@
             </div>
         </div>
         <div class="f_flexbottom">
-            <div class="copyright">© 1993 - {{ date("Y") }} HOT TOUR - ХОТ ТУР</div>
+            <div class="copyright">© 1993 - {{ date("Y") }} Vizit Expert - Визит Эксперт</div>
             <div class="sign_the_contract">
                 <a style="padding-right: 8px" href="/o-nas/dokumenty/rekvizity">Все реквизиты</a>
                 <a style="padding-right: 8px"  href="/o-nas/dokumenty/polzovatelskoe-soglashenie">Пользовательское соглашение</a>
