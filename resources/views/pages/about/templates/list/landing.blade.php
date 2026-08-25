@@ -120,7 +120,7 @@
 
             <div class="landing__video">
                 <video controls preload="none" width="1120" height="560"
-                       poster="{{ asset('/video/poster.jpg') }}" onclick="this.play();">
+                       poster="{{ asset('/images/video.jpg') }}" onclick="this.play();">
                     <source src="{{ asset('/video/hottour.mp4') }}" type="video/mp4">
                     Ваш браузер не поддерживает встроенные видео :(
                 </video>

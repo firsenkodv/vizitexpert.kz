@@ -6,7 +6,7 @@
 
     <div class="v_vid__wrapper">
         <div class="v_vid__video">
-            <video controls width="100%" height="484" preload="none"  poster="{{ asset('/video/poster.jpg') }}" onclick="this.play();">
+            <video controls width="100%" height="484" preload="none"  poster="{{ asset('/images/video.jpg') }}" onclick="this.play();">
                 <source src="{{ asset('/video/hottour.mp4') }}" type="video/mp4">
                 Ваш браузер не поддерживает встроенные видео :(
             </video>
